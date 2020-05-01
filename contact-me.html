@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+    <meta name="description" content="Gunn Malene Plaza-Olsen's home page with a portfolio.">
+</head>
+
+<body>
+    <nav>
+        <a class="navigation navlogo" href="index.html">
+            <img class="logo" src="site-logo.svg" alt="Home">
+        </a>
+        <div class="headerLinks">
+            <a class="navigation navHeader" href="index.html">Home</a>
+
+            <a class="navigation navHeader" href="about-me.html">About</a>
+
+            <a class="navigation navHeader" href="cv.html">CV</a>
+
+            <a class="navigation navHeader active" href="contact-me.html">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <h1>I would love to hear from you</h1>
+
+        <form class="container formProject" id="contactForm">
+            <div>
+                <label for="name">Name</label>
+                <div class="formError" id="nameError">Please enter your name</div>
+                <input type="text" class="formInput formProject" name="name" id="name">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <div class="formError" id="emailError">Please enter your email address</div>
+                <div class="formError" id="invalidEmailError">Please enter a valid email address</div>
+                <input type="text" class="formInput formProject" name="email" id="email">
+            </div>
+            <div>
+                <label for="message">Your message here</label>
+                <div class="formError" id="messageError">You must write a message</div>
+                <div class="formError" id="validMessageError">Please write at least 10 charachters</div>
+                <textarea class="formInput formProject" name="message" id="message"></textarea>
+            </div>
+            <button type="submit" class="sendForm" id="submit">
+                SEND
+            </button>
+        </form>
+    </main>
+    <footer>
+        <div class="footerLinks">
+            <a class="navigation navFooter" href="index.html">Home</a>
+
+            <a class="navigation navFooter" href="about-me.html">About</a>
+
+            <a class="navigation navFooter" href="cv.html">CV</a>
+
+            <a class="navigation navFooter" href="contact-me.html">Contact</a>
+        </div>
+        <p class="allRights"> &copy; Gunn Malene Plaz-Olsen </p>
+        <div class="socialLinks">
+            <a href="https://github.com/GunnMaleneOlsen" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/gunn-malene-plaza-olsen-00b197198/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://dribbble.com/gm-PlazaOlsen" target="_blank">
+                <i class="fas fa-basketball-ball"></i>
+            </a>
+        </div>
+
+    </footer>
+
+    <script src="contact.js"></script>
+</body>

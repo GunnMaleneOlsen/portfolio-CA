@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    top: 150px;
+    text-align: center;
+    /* Was not able to keep the footer at the bottom if there 
+    were not enough content on the site so I put a fixed height on the main element, 
+    I know this is not the best solution and only offers a "bandaid" to the problem.*/
+    min-height: 1000px;
+}
+
+h1 {
+    font-family: karla;
+    color: #F23535;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    font-family: montserrat;
+    color: #707070;
+    text-align: center;
+}
+
+a {
+    color: #707070;
+    text-decoration: none;
+}
+
+img {
+    max-width: 600px;
+    height: auto;
+    margin: 30px;
+}
+
+/* here are the code for links/navigation */
+
+nav {
+    display: inline-flex;
+    align-items: center;
+    min-height: 100px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    margin-top: 0;
+}
+
+.navigation {
+    font-family: karla;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F29191;
+}
+
+.headerLinks {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+}
+
+.navHeader {
+    margin: 5%;
+    font-size: 17pt;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.navHeader:hover {
+    color: #F25252;
+}
+
+.navlogo {
+    margin-left: 30px;
+}
+
+.logo {
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.active {
+    color: #26BFBF;
+}
+
+.active:hover {
+    color: #26BFBF;
+}
+
+.allRights {
+    font-family: karla;
+    font-size: 17pt;
+    margin: 0;
+    color: #F25252;
+}
+
+footer {
+    display: block;
+    height: fit-content;
+    width: 100%;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.footerLinks {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.socialLinks {
+    margin-top: 30px;
+}
+
+.fab, .fas {
+    font-size: 50pt;
+    color: #707070;
+    margin: 20px;
+}
+
+.navFooter {
+    color: #F23535;
+    font-size: 17pt;
+    margin: 30px;
+}
+
+.navFooter:hover {
+    color: #26BFBF;
+}
+
+/*code for title cards and other object on the main property of the site*/
+
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 30px;
+}
+
+.container:hover {
+    background-color: #26BFBF;
+    color: white;
+}
+
+.imageHolder {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: solid #F29191 5px;
+    background-color: rgb(210, 208, 255);
+    width: 350px;
+    height: 350px;
+}
+
+.projectImg {
+    width: 300px;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    margin: 20px;
+    margin-top: 20%;
+}
+
+.title {
+    display: inline-flex;
+    justify-content: space-between;
+    font-family: montserrat;
+    margin: 20px;
+}
+
+.projectTitle {
+    font-weight: bold;
+}
+
+.projectDate {
+    font-style: oblique;
+}
+
+#numetryProject {
+    background-color: rgb(182, 179, 243);
+}
+
+.text {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*code for cv site*/
+
+#cvMain {
+    text-align: left;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#cvCard {
+    margin-left: 0;
+    display: inline-flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+#cvImage {
+    width: 350px;
+    margin: auto;
+}
+
+#cvImageHolder {
+    margin-bottom: 10px;
+}
+
+.cvTitle {
+    display: inline-flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.profile {
+    font-family: montserrat;
+    margin: 10px;
+}
+
+.profileTitle {
+    font-weight: bold;
+    display: inline-block;
+    width: 50px;
+}
+
+#groupCvInfo {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cvInfoContainer {
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 30px;
+    text-align: left;
+}
+
+#cvInfoContainerFirst {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.cvInfo {
+    font-family: montserrat;
+}
+
+.cvDetails {
+    margin: 20px;
+    margin-left: 20px;
+    text-align: start;
+}
+
+.cvInfoSpan {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*code for contact site*/
+
+#contactForm {
+    height: fit-content;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.formInput {
+    width: 350px;
+    height: 50px;
+    margin: 10px;
+    margin-top: 0;
+    padding-left: 10px;
+    font-size: 12pt;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid #F29191;
+}
+
+#message {
+    height: 200px;
+    padding-top: 10px;
+}
+
+::placeholder {
+    color: #a1a1a1;
+    font-size: 12pt;
+}
+
+.sendForm {
+    border: none;
+    background-color: #F29191;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12pt;
+}
+
+.sendForm:hover {
+    background-color: #26BFBF;
+}
+
+.formError {
+    font-family: montserrat;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 0;
+    color: #F23535;
+    display: none;
+}
+
+label {
+    display: block;
+    font-family: montserrat;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #707070;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1100px) {
+    #cvCard {
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    #cvImageHolder {
+        height: 314px;
+        width: 314px;
+    }
+    #cvImage {
+        height: 314px;
+        width: 314px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    main{
+        min-height: fit-content;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .navlogo {
+        margin: 0;
+    }
+    .headerLinks {
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+    .footerLinks {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .navFooter {
+        margin: 10px;
+    }
+    .mainText {
+        width: 90%;
+    }
+    #cvMain {
+        flex-direction: column;
+    }
+    #cvCard {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .logo {
+        height: 25px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .mainText {
+        max-width: 350px;
+    }
+    .project {
+        width: 90%;
+        height: 90%;
+    }
+    .projectImg {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #cvCard {
+        width: 90%;
+    }
+    #cvImageHolder {
+        height: 300px;
+        width: 300px;
+    }
+    #cvImage {
+        height: 300px;
+        width: 300px;
+    }
+    .cvInfoSpan {
+        margin-left: 0;
+    }
+    .cvInfoContainer {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .formProject {
+        width: 90%;
+    }
+    .formInput {
+        width: 85%;
+    }
+}
